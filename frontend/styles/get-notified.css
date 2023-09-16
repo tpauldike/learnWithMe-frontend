@@ -1,0 +1,46 @@
+.get-notified {
+    flex-grow: 1;
+  background: linear-gradient(to right, #fff, #036953);
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  right: 50px;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+.get-notified p {
+    color: rgba(13, 8, 17, 0.822);
+}
+
+.get-notified em {
+    color: rgb(238, 15, 15);
+}
+
+.user-choice {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.choice {
+    color: #0aa144e0;
+    padding: 1rem 0.2rem;
+    cursor: pointer;
+}
+
+.choice:hover {
+    color: rgb(238, 15, 15);
+}
+
+#prompt-user {
+    padding: 0.5rem 1rem;
+}
+
+#number-input,
+#whatsapp-no {
+    padding: 0.5 0rem;
+    font-size: 15px;
+}

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>LearnWithMe</title>
-    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="stylesheet" href="./styles/get-notified.css">
   </head>
   <header>
     <div class="header-content">
@@ -12,7 +13,7 @@
         <a href="#about">About</a>
         <a href="#contact_topman">Contact Topman</a>
         <a href="#subscribe">Subscribe</a>
-        <button type="button">Login</button>
+        <button type="button">Get Notified</button>
       </nav>
     </div>
     <h4 id="sub">Subscription Form</h4>
@@ -99,6 +100,21 @@
         <button id="submit-form" type="submit">Submit</button>
       </div>
     </form>
+    <div class="get-notified">
+      <p>
+        Provide your WhatsApp contact <em>with your country code</em> to be added to the WhatsApp broadcast list
+        where you'll get notified about different live learning sessions that you can participate in, free of charge?
+      </p>
+      <span class="user-choice">
+        <p>Are you interested? <span class="choice">Accept</span></p>
+      <p>Not interested? <span class="choice">Decline</span></p>
+    </span>
+    <span id="number-input">
+      <p id="prompt-user">Please provide your country code with your number</p>
+      <input type="tel" name="whatsapp-no" id="whatsapp-no" placeholder="Your country code and WhatsApp contact">
+      <button type="submit" id="submit-whatsapp-no">Submit</button>
+    </span>
+    </div>
     <div class="footer">
       &copy Portfolio Project by Topman Paul-Dike
     </div>

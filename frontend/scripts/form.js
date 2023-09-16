@@ -1,3 +1,7 @@
+// const apiUrl = 'phone-number-validation-api.p.rapidapi.com/checkNumber';
+// const apiKey = 'c9728f9495msh27f9bfdf197d54bp1afce1jsned9501dbdc44';
+
+
 const form = document.querySelector("form"),
   submitForm = document.querySelector("#submit-form");
 
@@ -17,4 +21,3 @@ document.getElementById('course').addEventListener('input', () => {
 document.getElementById('schedule').addEventListener('input', () => {
   document.getElementById('schedule').value === 'custom' ? document.getElementById('customized-schedule').style.display = 'block' : document.getElementById('customized-schedule').style.display = 'none';
 });
-
