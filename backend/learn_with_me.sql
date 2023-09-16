@@ -1,0 +1,5 @@
+CREATE DATABASE learn_with_me IF NOT EXISTS;
+USE learn_with_me;
+CREATE TABLE applications (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY
+)
