@@ -35,6 +35,10 @@ nav a:hover {
   color: rgb(238, 15, 15);
 }
 
+nav button {
+  color: #0000ff;
+}
+
 h1#learn {
   flex: 1;
   color: #ffffff;

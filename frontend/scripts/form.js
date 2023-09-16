@@ -8,9 +8,13 @@ form.addEventListener("submit", (event) => {
   console.log(data);
 });
 
-/*
-submitForm.addEventListener('click', (event) => {
-  alert(
-    "Your subscription will be completed when your payment is confirmed, expect an email with more information"
-  )});
-*/
+// document.addEventListener('DOMContentLoaded', ...
+
+document.getElementById('course').addEventListener('input', () => {
+  document.getElementById('course').value === 'others' ? document.getElementById('specify-course').style.display = 'block' : document.getElementById('specify-course').style.display = 'none';
+});
+
+document.getElementById('schedule').addEventListener('input', () => {
+  document.getElementById('schedule').value === 'custom' ? document.getElementById('customized-schedule').style.display = 'block' : document.getElementById('customized-schedule').style.display = 'none';
+});
+
