@@ -1,6 +1,6 @@
-.get-notified {
-    flex-grow: 1;
-  background: linear-gradient(to right, #fff, #036953);
+.get-notified-container {
+  /* flex-grow: 1; */
+  background: rgb(0, 19, 31);
   position: absolute;
   z-index: 2;
   top: 70px;
@@ -11,36 +11,52 @@
   display: none;
 }
 
-.get-notified p {
-    color: rgba(13, 8, 17, 0.822);
+.get-notified-container #notice {
+    font-weight: 500;
+    color: rgb(255, 153, 0);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
 }
 
-.get-notified em {
-    color: rgb(238, 15, 15);
+.get-notified-container em {
+  color: #cfc6c6;
 }
 
-.user-choice {
-    display: flex;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+#user-choice {
+  display: flex;
+  /* justify-content: center; */
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+
+}
+
+.get-notified-container #user-choice {
+    color: #fff;
 }
 
 .choice {
-    color: #0aa144e0;
-    padding: 1rem 0.2rem;
-    cursor: pointer;
+  color: #0aa144e0;
+  padding: 1rem 0.2rem;
+  cursor: pointer;
 }
 
 .choice:hover {
-    color: rgb(238, 15, 15);
+  color: rgb(238, 15, 15);
 }
 
 #prompt-user {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
 }
 
 #number-input,
 #whatsapp-no {
-    padding: 0.5 0rem;
-    font-size: 15px;
+  padding: 0.5 0rem;
+  font-size: 15px;
+}
+
+#number-input {
+    display: none;
 }

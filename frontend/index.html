@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>LearnWithMe</title>
     <link rel="stylesheet" href="./styles/form.css" />
-    <link rel="stylesheet" href="./styles/get-notified.css">
+    <link rel="stylesheet" href="./styles/get-notified.css" />
   </head>
   <header>
     <div class="header-content">
@@ -13,7 +13,7 @@
         <a href="#about">About</a>
         <a href="#contact_topman">Contact Topman</a>
         <a href="#subscribe">Subscribe</a>
-        <button type="button">Get Notified</button>
+        <button type="button" id="get-notified-btn">Get Notified</button>
       </nav>
     </div>
     <h4 id="sub">Subscription Form</h4>
@@ -22,11 +22,21 @@
     <form>
       <div class="form-group">
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name in full" />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name in full"
+        />
       </div>
       <div class="form-group">
         <label for="google-name">Google Name:</label>
-        <input type="text" id="google-name" name="google-name" placeholder="As is appears on Google meet" />
+        <input
+          type="text"
+          id="google-name"
+          name="google-name"
+          placeholder="As is appears on Google meet"
+        />
       </div>
       <div class="form-group">
         <label for="sex">Sex:</label>
@@ -72,7 +82,12 @@
       </div>
       <div class="form-group" id="specify-course">
         <label for="specify">Kindly specify:</label>
-        <input type="text" id="email" name="specify" placeholder="Enter the course of interest" />
+        <input
+          type="text"
+          id="email"
+          name="specify"
+          placeholder="Enter the course of interest"
+        />
       </div>
       <div class="form-group">
         <label for="schedule">Schedule:</label>
@@ -83,41 +98,65 @@
           <option value="custom">Custom</option>
         </select>
       </div>
-      
+
       <div class="form-group" id="customized-schedule">
         <label for="custom-schedule">Custom Schedule: </label>
-        <input type="text" id="custom-schedule" name="custom-schedule" placeholder="Your prefered schedule"/>
+        <input
+          type="text"
+          id="custom-schedule"
+          name="custom-schedule"
+          placeholder="Your prefered schedule"
+        />
       </div>
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="you@mail.com" required/>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@mail.com"
+          required
+        />
       </div>
       <div class="form-group">
         <label for="phone-number">Phone Number:</label>
-        <input type="tel" id="phone-number" name="phone-number" placeholder="Valid phone with country code"/>
+        <input
+          type="tel"
+          id="phone-number"
+          name="phone-number"
+          placeholder="Valid phone with country code"
+        />
       </div>
       <div class="form-group">
         <button id="submit-form" type="submit">Submit</button>
       </div>
     </form>
-    <div class="get-notified">
-      <p>
-        Provide your WhatsApp contact <em>with your country code</em> to be added to the WhatsApp broadcast list
-        where you'll get notified about different live learning sessions that you can participate in, free of charge?
+    <div class="get-notified-container" id="get-notified-container'">
+      <p id="notice">
+        Provide your WhatsApp contact <em>with your country code</em> to be
+        added to the WhatsApp broadcast list where you'll get notified about
+        different live learning sessions that you can participate in, free of
+        charge?
       </p>
-      <span class="user-choice">
-        <p>Are you interested? <span class="choice">Accept</span></p>
-      <p>Not interested? <span class="choice">Decline</span></p>
-    </span>
-    <span id="number-input">
-      <p id="prompt-user">Please provide your country code with your number</p>
-      <input type="tel" name="whatsapp-no" id="whatsapp-no" placeholder="Your country code and WhatsApp contact">
-      <button type="submit" id="submit-whatsapp-no">Submit</button>
-    </span>
+      <span id="user-choice">
+        <p>Are you interested? <span class="choice" id="accept">Accept</span></p>
+        <p>Not interested? <span class="choice" id="decline">Decline</span></p>
+      </span>
+      <span id="number-input">
+        <p id="prompt-user">
+          Please provide your country code and mobile number (for example +233 *** *** **)
+        </p>
+        <input
+          type="tel"
+          name="whatsapp-no"
+          id="whatsapp-no"
+          placeholder="Your country code and WhatsApp contact"
+        />
+        <button type="submit" id="submit-whatsapp-no">Submit</button>
+      </span>
     </div>
-    <div class="footer">
-      &copy Portfolio Project by Topman Paul-Dike
-    </div>
+    <div class="footer">&copy Portfolio Project by Topman Paul-Dike</div>
     <script src="scripts/form.js"></script>
+    <script src="scripts/get-notified.js"></script>
   </body>
 </html>
