@@ -6,5 +6,5 @@ const getWhatsappNumber = document.getElementById('number-input');
 const submitWhastappNumber = document.getElementById('submit-whatsapp-no');
 
 getNotifiedBtn.addEventListener('click', () => {
-    askForWhatsappContact.style.display = 'block';
+    askForWhatsappContact.style.display === 'none' ? askForWhatsappContact.style.display = 'block' : askForWhatsappContact.style.display = 'none';
 });
