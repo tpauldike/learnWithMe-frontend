@@ -5,13 +5,13 @@ const contactTopman = document.getElementById('contact_topman');
 const subscribeNavBtn = document.getElementById('subscribe');
 const comingSoon = document.getElementById('coming-soon');
 
-// aboutNavBtn.addEventListener('click', () => {
-//   setTimeout(() => {
-//     comingSoon.classList.toggle('hidden');
-//   }, 3000);
-//   comingSoon.classList.toggle('hidden');
-// })
+aboutNavBtn.addEventListener('click', () => {
+  alert('It\'s working');
+});
 
+contactTopman.addEventListener('click', () => {
+  alert('It\'s working');
+});
 
 const form = document.querySelector("form"),
   submitForm = document.querySelector("#submit-form");
