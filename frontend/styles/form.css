@@ -56,6 +56,26 @@ nav button:hover {
   background: rgb(238, 15, 15);
 }
 
+.coming-soon {
+  z-index: 2;
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  
+  color: rgb(238, 15, 15);
+  font-weight: 600;
+  display: none;
+}
+
+.coming-soon p {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 h1#learn {
   flex: 1;
   color: #ffffff;

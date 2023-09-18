@@ -20,13 +20,15 @@
   background: none;
   border: none;
   font-size: 18px;
+  padding: 0 0.2rem;
   cursor: pointer;
 }
 
 .get-notified-container #cancel-btn:hover {
   color: rgb(255, 61, 61);
   background: #fff;
-  padding: 0 1px;
+  border-radius: 5px;
+  padding: 0 0.2rem;
 }
 
 .get-notified-container #notice {
@@ -35,7 +37,7 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .get-notified-container em {

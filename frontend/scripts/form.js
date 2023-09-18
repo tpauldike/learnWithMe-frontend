@@ -1,5 +1,16 @@
 // const apiUrl = 'phone-number-validation-api.p.rapidapi.com/checkNumber';
 // const apiKey = 'c9728f9495msh27f9bfdf197d54bp1afce1jsned9501dbdc44';
+const aboutNavBtn = document.getElementById('about');
+const contactTopman = document.getElementById('contact_topman');
+const subscribeNavBtn = document.getElementById('subscribe');
+const comingSoon = document.getElementById('coming-soon');
+
+// aboutNavBtn.addEventListener('click', () => {
+//   setTimeout(() => {
+//     comingSoon.classList.toggle('hidden');
+//   }, 3000);
+//   comingSoon.classList.toggle('hidden');
+// })
 
 
 const form = document.querySelector("form"),
