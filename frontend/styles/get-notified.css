@@ -24,7 +24,9 @@
 }
 
 .get-notified-container #cancel-btn:hover {
-  color: rgb(238, 15, 15);
+  color: rgb(255, 61, 61);
+  background: #fff;
+  padding: 0 1px;
 }
 
 .get-notified-container #notice {
