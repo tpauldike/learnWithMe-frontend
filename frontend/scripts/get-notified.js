@@ -29,3 +29,30 @@ acceptBtn.addEventListener('click', () => {
     getWhatsappNumber.style.display = 'block';
 });
 
+document.body.addEventListener('click', (event) => {
+    // Check if the click target is not within the container or its buttons
+    if (
+        !askForWhatsappContact.contains(event.target) &&
+        event.target !== getNotifiedBtn
+    ) {
+        // Hide the container if it's currently visible
+        if (isContainerVisible) {
+            askForWhatsappContact.style.display = 'none';
+            isContainerVisible = false;
+        }
+    }
+});
+
+document.body.addEventListener('click', (event) => {
+    // Check if the click target is not within the container or its buttons
+    if (
+        !askForWhatsappContact.contains(event.target) &&
+        event.target !== getNotifiedBtn
+    ) {
+        // Hide the container if it's currently visible
+        if (isContainerVisible) {
+            askForWhatsappContact.style.display = 'none';
+            isContainerVisible = false;
+        }
+    }
+});
