@@ -169,10 +169,6 @@ button[type="submit"]:hover {
   form {
     display: flex;
     flex-direction: column;
-    /* grid-gap: 20px; */
-    /* max-width: 600px; */
-    /* margin: 0 auto; */
-    /* padding: 20px; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background: #000000;
@@ -181,6 +177,15 @@ button[type="submit"]:hover {
 
   nav p, nav button {
     display: none;
+    padding: 0.5rem;
+  }
+  
+  nav button {
+    padding: 3px;
+  }
+
+  nav p {
+    padding: 1 2rem;
   }
 
   nav details, .menu-nav {
@@ -191,18 +196,26 @@ button[type="submit"]:hover {
   
   .menu-nav-container {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     z-index: 2;
     position: absolute;
-    right: 0px;
-    padding: 0 0rem;
+    right: 3px;
+    padding: 1 0rem;
     background: rgb(0, 19, 31);
     border-radius: 5px;
     align-items: center;
     align-content: center;
+    font-size: 14px;
   }
 
   h4#sub {
   font-size: 20px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  form {
+    
+  }
+}
+
