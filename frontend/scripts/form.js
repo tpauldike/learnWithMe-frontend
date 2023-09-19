@@ -4,24 +4,37 @@ const aboutNavBtn = document.getElementById('about');
 const contactTopman = document.getElementById('contact_topman');
 const subscribeNavBtn = document.getElementById('subscribe');
 const comingSoon = document.getElementById('coming-soon');
+const form = document.querySelector("form");
+const submitForm = document.querySelector("#submit-form");
 
-aboutNavBtn.addEventListener('click', () => {
-  alert('It\'s working');
-});
 
-contactTopman.addEventListener('click', () => {
-  alert('It\'s working');
-});
 
-const form = document.querySelector("form"),
-  submitForm = document.querySelector("#submit-form");
+const displayComingSoon = () => {
+    setTimeout(() => {
+      comingSoon.style.display = 'flex'
+    },
+      200);
+    comingSoon.style.display = 'none';
+};
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const formData = new FormData(form);
-  const data = Object.fromEntries(formData.entries());
-  console.log(data);
-});
+// contactTopman.addEventListener('click', () => {
+//   setTimeout(() => {
+//     comingSoon.style.display = 'flex'
+//   },
+//     200);
+//   comingSoon.style.display = 'none';
+// });
+
+subscribeNavBtn.addEventListener('click', () => {
+  alert('You subcribe by filling and submitting the subscription form');
+})
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   const formData = new FormData(form);
+//   const data = Object.fromEntries(formData.entries());
+//   console.log(data);
+// });
 
 // document.addEventListener('DOMContentLoaded', ...
 

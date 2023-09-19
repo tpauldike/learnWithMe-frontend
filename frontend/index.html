@@ -11,13 +11,22 @@
     <div class="header-content">
       <h1 id="learn">LearnWithMe</h1>
       <nav>
-        <a href="#about" id="about">About</a>
-        <a href="#contact_topman" id="contact_topman">Contact Topman</a>
-        <a href="#subscribe" id="subscribe">Subscribe</a>
+        <p id="about">About</p>
+        <p id="contact_topman">Contact Topman</p>
+        <p id="subscribe">Subscribe</p>
         <button type="button" id="get-notified-btn">Get Notified</button>
+        <details class="menu">
+          <summary>Menu</summary>
+          <span class="menu-nav-container">
+          <p class="menu-nav" onclick="displayComingSoon();" id="about">About</p>
+          <p class="menu-nav" id="contact_topman">Contact</p>
+          <p class="menu-nav" id="subscribe">Subscribe</p>
+          <button type="button" class="menu-nav" id="get-notified-btn">Get Notified</button>
+        </span>
+        </details>
       </nav>
     </div>
-      <div class="coming-soon" id="coming-soon">
+      <div class="coming-soon slide-top" id="coming-soon">
         <p>Coming soon...!</p>
       </div>
     <h4 id="sub">Subscription Form</h4>
@@ -39,7 +48,7 @@
           type="text"
           id="google-name"
           name="google-name"
-          placeholder="As is appears on Google meet"
+          placeholder="As it appears on Google meet"
         />
       </div>
       <div class="form-group">
@@ -128,7 +137,7 @@
           type="tel"
           id="phone-number"
           name="phone-number"
-          placeholder="Valid phone with country code"
+          placeholder="Valid phone no. with country code"
         />
       </div>
       <div class="form-group">
