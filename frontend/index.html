@@ -16,18 +16,18 @@
       <p id="about" onclick="displayComingSoon();">About</p>
       <p id="contact_topman" onclick="displayComingSoon();">Contact Topman</p>
       <p id="subscribe" onclick="subscribeBtnResponse();">Subscribe</p>
+      <button type="button" id="menu-toggle" onclick="toggleMenu();">&#9776;</button>
+        <ul class="menu swing-in-top-fwd" id="menu">
+          <li onclick="displayComingSoon();">About</li>
+          <li onclick="displayComingSoon();">Contact Topman</li>
+          <li onclick="subscribeBtnResponse();">Subscribe</li>
+          <button type="button" id="get-notified-btn_mobile" onclick="displayGetNotifiedContainer();">Get
+            Notified</button>
+        </ul>
       <button type="button" id="get-notified-btn" onclick="displayGetNotifiedContainer();">Get Notified</button>
-      <details class="menu">
-        <summary>Menu</summary>
-        <span class="menu-nav-container" id="menu-nav-container">
-          <p class="menu-nav" onclick="displayComingSoon();" id="about">About</p>
-          <p class="menu-nav" id="contact_topman" onclick="displayComingSoon();">Contact Me</p>
-          <p class="menu-nav" id="subscribe" onclick="subscribeBtnResponse();">Subscribe</p>
-          <button type="button" class="menu-nav" id="get-notified-btn" onclick="displayGetNotifiedContainer();">Get Notified</button>
-        </span>
-      </details>
     </nav>
   </div>
+
   <div class="coming-soon slide-top" id="coming-soon">
     <p>Coming soon...!</p>
   </div>
@@ -43,6 +43,10 @@
     <div class="form-group">
       <label for="google-name">Google Name:</label>
       <input type="text" id="google-name" name="google-name" placeholder="As it appears on Google meet" />
+    </div>
+    <div class="form-group">
+      <label for="time-zone">Time Zone:</label>
+      <input type="text" id="time-zone" name="time-zone" placeholder="Your distance from UTC or GMT" />
     </div>
     <div class="form-group">
       <label for="sex">Sex:</label>
@@ -135,7 +139,7 @@
         Please provide your country code and mobile number (for example +233 *** *** **)
       </p>
       <input type="tel" name="whatsapp-no" id="whatsapp-no" placeholder="Your country code and WhatsApp contact" />
-      <button type="submit" id="submit-whatsapp-no">Submit</button>
+      <button type="submit" id="whatsapp-submit-btn">Submit</button>
     </span>
   </div>
   <div class="footer">&copy Portfolio Project by Topman Paul-Dike</div>
@@ -143,6 +147,7 @@
 
   <script type="text/javascript" src="scripts/form.js"></script>
   <script type="text/javascript" src="scripts/get-notified.js"></script>
+  <script type="text/javascript" src="scripts/../../.test.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,8 @@
-// const apiUrl = 'phone-number-validation-api.p.rapidapi.com/checkNumber';
-// const apiKey = 'c9728f9495msh27f9bfdf197d54bp1afce1jsned9501dbdc44';
-const aboutNavBtn = document.getElementById('about');
-const contactTopman = document.getElementById('contact_topman');
-const subscribeNavBtn = document.getElementById('subscribe');
 const comingSoon = document.getElementById('coming-soon');
-const form = document.querySelector("form");
-const submitForm = document.querySelector("#submit-form");
-
+const menu = document.getElementById('menu');
+// const form = document.querySelector("form");
+// const submitForm = document.querySelector("#submit-form");
+let isMenuVisible = false;
 
 
 const displayComingSoon = () => {
@@ -22,11 +18,29 @@ const subscribeBtnResponse = () => {
 };
 
 document.getElementById('course').addEventListener('input', () => {
-  document.getElementById('course').value === 'others' ? document.getElementById('specify-course').style.display = 'block' : document.getElementById('specify-course').style.display = 'none';
+  document.getElementById('course').value === 'others' ? document.getElementById('specify-course').style.display = 'flex' : document.getElementById('specify-course').style.display = 'none';
 });
 
 document.getElementById('schedule').addEventListener('input', () => {
-  document.getElementById('schedule').value === 'custom' ? document.getElementById('customized-schedule').style.display = 'block' : document.getElementById('customized-schedule').style.display = 'none';
+  document.getElementById('schedule').value === 'custom' ? document.getElementById('customized-schedule').style.display = 'flex' : document.getElementById('customized-schedule').style.display = 'none';
+});
+
+const toggleMenu = () => {
+  !isMenuVisible ? menu.style.display = 'flex' : menu.style.display = 'none';
+  isMenuVisible = !isMenuVisible;
+}
+
+// Hide the displayed menu when one clicks out
+document.body.addEventListener('click', (event) => {
+  if (
+      !menu.contains(event.target) &&
+      event.target !== document.getElementById('menu-toggle') && event.target !== document.getElementById('accept')
+      ) {
+      if (isMenuVisible) {
+          menu.style.display = 'none';
+          isMenuVisible = false;
+      }
+  }
 });
 
 // form.addEventListener("submit", (event) => {
@@ -35,5 +49,3 @@ document.getElementById('schedule').addEventListener('input', () => {
 //   const data = Object.fromEntries(formData.entries());
 //   console.log(data);
 // });
-
-// document.addEventListener('DOMContentLoaded', ...
