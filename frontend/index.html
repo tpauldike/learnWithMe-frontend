@@ -4,30 +4,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">
+  <link rel="manifest" href="./site.webmanifest">
   <title>LearnWithMe</title>
   <link rel="stylesheet" href="./styles/form.css" />
   <link rel="stylesheet" href="./styles/get-notified.css" />
   <link rel="stylesheet" href="./styles/animations.css" />
+  <link rel="stylesheet" href="./styles/notifications.css" />
 </head>
 <header>
   <div class="header-content">
+    <a href="./index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
     <h1 id="learn">LearnWithMe</h1>
     <nav>
       <p id="about" onclick="displayComingSoon();">About</p>
       <p id="contact_topman" onclick="displayComingSoon();">Contact Topman</p>
       <p id="subscribe" onclick="subscribeBtnResponse();">Subscribe</p>
       <button type="button" id="menu-toggle" onclick="toggleMenu();">&#9776;</button>
-        <ul class="menu swing-in-top-fwd" id="menu">
-          <li onclick="displayComingSoon();">About</li>
-          <li onclick="displayComingSoon();">Contact Topman</li>
-          <li onclick="subscribeBtnResponse();">Subscribe</li>
-          <button type="button" id="get-notified-btn_mobile" onclick="displayGetNotifiedContainer();">Get
-            Notified</button>
-        </ul>
+      <ul class="menu swing-in-top-fwd" id="menu">
+        <li onclick="displayComingSoon();">About</li>
+        <li onclick="displayComingSoon();">Contact Topman</li>
+        <li onclick="subscribeBtnResponse();">Subscribe</li>
+        <button type="button" id="get-notified-btn_mobile" onclick="displayGetNotifiedContainer();">Get
+          Notified</button>
+      </ul>
       <button type="button" id="get-notified-btn" onclick="displayGetNotifiedContainer();">Get Notified</button>
     </nav>
   </div>
-
+  <!-- Temporary notification while I'm yet to implement all my nav buttons -->
   <div class="coming-soon slide-top" id="coming-soon">
     <p>Coming soon...!</p>
   </div>
@@ -121,7 +129,7 @@
     </div>
   </form>
 
-
+  <!-- To have interested users add their WhatsApp contact to my broadcast list -->
   <div class="get-notified-container fade-in" id="get-notified-container">
     <span id="cancel-btn" onclick="hideGetNotifiedContainer();">&times;</span>
     <p id="notice">
@@ -142,12 +150,19 @@
       <button type="submit" id="whatsapp-submit-btn">Submit</button>
     </span>
   </div>
+
+  <!-- Notifications to be displayed to stop the user from resending a processing request -->
+  <div class="notifications heartbeat">
+    <p id="request-processing"><em>Request processing...</em></p>
+    <p id="please-wait"><em>Please wait...</em></p>
+    <p id="successful"><em>Subscription successful!</em></p>
+    <p id="error"><em></em></p>
+  </div>
   <div class="footer">&copy Portfolio Project by Topman Paul-Dike</div>
 
 
   <script type="text/javascript" src="scripts/form.js"></script>
   <script type="text/javascript" src="scripts/get-notified.js"></script>
-  <script type="text/javascript" src="scripts/../../.test.js"></script>
 </body>
 
 </html>

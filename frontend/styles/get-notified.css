@@ -3,7 +3,7 @@
   background: rgb(0, 19, 31);
   position: absolute;
   z-index: 2;
-  top: 70px;
+  top: 100px;
   right: 50px;
   max-width: 400px;
   padding: 20px;
@@ -84,9 +84,15 @@
 @media screen and (max-width: 430px) {
   .get-notified-container {
     font-size: 15px;
-    top: 260px;
+    top: 340px;
     right: 10px;
     left: 10px;
     max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .get-notified-container {
+    top: 336px;
   }
 }

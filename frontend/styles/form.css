@@ -25,6 +25,12 @@ body {
   padding: 10px;
 }
 
+.logo {
+  max-width: 70px;
+  align-content: center;
+  justify-content: center;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -73,25 +79,6 @@ nav button:hover {
   color: #1472c4;
   margin-right: 20px;
   display: none;
-}
-
-.coming-soon {
-  z-index: 2;
-  display: none;
-  justify-content: center; /* Horizontally center content */
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-
-  color: rgb(238, 15, 15);
-  font-weight: 600;
-}
-
-.coming-soon p {
-  background: #fff;
-  padding: 10px;
-  border-radius: 10px;
 }
 
 h1#learn {
@@ -178,6 +165,7 @@ button[type="submit"]:hover {
   margin-top: 6px;
   text-align: center;
   color: #5daaee;
+  font-size: small;
 }
 
 @media screen and (max-width: 768px) {
@@ -209,8 +197,8 @@ button[type="submit"]:hover {
     padding: 10px;
     background: rgb(0, 19, 31);
     border-radius: 5px;
-    top: 50px;
-    right: 115px;
+    top: 90px;
+    right: 100px;
     display: none;
     flex-direction: column;
     position: absolute;
@@ -275,8 +263,8 @@ button[type="submit"]:hover {
   }
   
   .menu {
-    right: 135px;
-    top: 90px;
+    right: 140px;
+    top: 175px;
   }
 
   #get-notified-btn {
@@ -296,7 +284,7 @@ button[type="submit"]:hover {
 
 @media screen and (max-width: 385px) {
   .menu {
-    right: 118px;
-    top: 90px;
+    right: 110px;
+    top: 170px;
   }
 }

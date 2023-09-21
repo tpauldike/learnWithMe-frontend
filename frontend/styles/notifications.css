@@ -1,0 +1,33 @@
+.coming-soon, .notifications {
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+
+    color: rgb(238, 15, 15);
+    font-weight: 600;
+}
+
+.coming-soon p,
+.notifications p {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.notifications {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    top: 600px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .notifications {
+        top: 1000px;
+    }
+}
