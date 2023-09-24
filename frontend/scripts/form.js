@@ -3,14 +3,16 @@ const menu = document.getElementById('menu');
 // const form = document.querySelector("form");
 // const submitForm = document.querySelector("#submit-form");
 let isMenuVisible = false;
+let isFaded = menu.style.display === 'none' ? true : false;
+
 
 
 const displayComingSoon = () => {
-    setTimeout(() => {
-      comingSoon.style.display = 'flex'
-    },
-      200);
-    comingSoon.style.display = 'none';
+  setTimeout(() => {
+    comingSoon.style.display = 'flex'
+  },
+    200);
+  comingSoon.style.display = 'none';
 };
 
 const subscribeBtnResponse = () => {
@@ -28,18 +30,27 @@ document.getElementById('schedule').addEventListener('input', () => {
 const toggleMenu = () => {
   !isMenuVisible ? menu.style.display = 'flex' : menu.style.display = 'none';
   isMenuVisible = !isMenuVisible;
+  !isFaded ? document.getElementById('fade-background').style.display = 'block' : document.getElementById('fade-background').style.display = 'none';
+  isFaded = !isFaded;
+}
+
+const keepBackgroundFaded = () => {
+  document.getElementById('fade-background').style.display = 'block';
+  isFaded = true;
 }
 
 // Hide the displayed menu when one clicks out
 document.body.addEventListener('click', (event) => {
   if (
-      !menu.contains(event.target) &&
-      event.target !== document.getElementById('menu-toggle') && event.target !== document.getElementById('accept')
-      ) {
-      if (isMenuVisible) {
-          menu.style.display = 'none';
-          isMenuVisible = false;
-      }
+    !menu.contains(event.target) &&
+    event.target !== document.getElementById('menu-toggle') && event.target !== document.getElementById('accept')
+  ) {
+    if (isMenuVisible) {
+      menu.style.display = 'none';
+      isMenuVisible = false;
+      document.getElementById('fade-background').style.display = 'none';
+      isFaded = false;
+    }
   }
 });
 

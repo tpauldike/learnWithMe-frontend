@@ -26,8 +26,8 @@
       <p id="subscribe" onclick="subscribeBtnResponse();">Subscribe</p>
       <button type="button" id="menu-toggle" onclick="toggleMenu();">&#9776;</button>
       <ul class="menu swing-in-top-fwd" id="menu">
-        <li onclick="displayComingSoon();">About</li>
-        <li onclick="displayComingSoon();">Contact Topman</li>
+        <li onclick="keepBackgroundFaded(); displayComingSoon();">About</li>
+        <li onclick="keepBackgroundFaded(); displayComingSoon();">Contact Topman</li>
         <li onclick="subscribeBtnResponse();">Subscribe</li>
         <button type="button" id="get-notified-btn_mobile" onclick="displayGetNotifiedContainer();">Get
           Notified</button>
@@ -122,7 +122,7 @@
     </div>
     <div class="form-group">
       <label for="phone-number">Phone Number:</label>
-      <input type="tel" id="phone-number" name="phone-number" placeholder="Valid phone no. with country code" />
+      <input type="tel" id="phone-number" name="phone-number" placeholder="Phone no. with country code" />
     </div>
     <div class="form-group">
       <button id="submit-form" type="submit">Submit</button>

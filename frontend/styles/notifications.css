@@ -1,5 +1,5 @@
 .coming-soon, .notifications {
-    z-index: 2;
+    z-index: 4;
     display: none;
     justify-content: center;
     position: absolute;

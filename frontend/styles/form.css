@@ -67,11 +67,13 @@ nav button:hover {
 
 #menu-toggle {
   display: none;
+  z-index: 4;
 }
 
 .menu {
   list-style: none;
   align-items: center;
+  z-index: 3;
 }
 
 .menu li {
@@ -198,11 +200,11 @@ button[type="submit"]:hover {
     background: rgb(0, 19, 31);
     border-radius: 5px;
     top: 90px;
-    right: 100px;
+    right: 0px;
+    left: 0px;
     display: none;
     flex-direction: column;
     position: absolute;
-    z-index: 2;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -253,18 +255,23 @@ button[type="submit"]:hover {
   }
 
   h1#learn {
-    padding: 10px;
+    padding: 0px;
+    margin-bottom: 20px;
   }
 
   #menu-toggle {
     padding: 4px;
     margin: 10px;
     font-size: small;
+    position: absolute;
+    left: 0;
+    top: 130px;
   }
-  
+
   .menu {
-    right: 140px;
-    top: 175px;
+    left: 0px;  
+    right: 0px;
+    top: 130px;
   }
 
   #get-notified-btn {
@@ -280,11 +287,4 @@ button[type="submit"]:hover {
     max-width: 300px;
   }
 
-}
-
-@media screen and (max-width: 385px) {
-  .menu {
-    right: 110px;
-    top: 170px;
-  }
 }
