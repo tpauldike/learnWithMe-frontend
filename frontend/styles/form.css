@@ -239,10 +239,6 @@ button[type="submit"]:hover {
     right: 100px;
   }
 
-  h4#sub {
-    font-size: 20px;
-  }
-
   .footer {
     font-size: x-small;
   }
@@ -259,6 +255,11 @@ button[type="submit"]:hover {
     margin-bottom: 20px;
   }
 
+  h4#sub {
+    line-height: 1.5;
+    padding: 10px;
+  }
+
   #menu-toggle {
     padding: 4px;
     margin: 10px;
@@ -269,7 +270,7 @@ button[type="submit"]:hover {
   }
 
   .menu {
-    left: 0px;  
+    left: 0px;
     right: 0px;
     top: 130px;
   }
