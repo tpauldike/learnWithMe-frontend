@@ -129,27 +129,28 @@
     </div>
   </form>
 
-  <!-- To have interested users add their WhatsApp contact to my broadcast list -->
-  <div class="get-notified-container fade-in" id="get-notified-container">
-    <span id="cancel-btn" onclick="hideGetNotifiedContainer();">&times;</span>
-    <p id="notice">
-      Provide your WhatsApp contact <em>with your country code</em> to be
-      added to the WhatsApp broadcast list where you'll get notified about
-      different live learning sessions that you can participate in, free of
-      charge?
-    </p>
-    <span id="user-choice">
-      <p>Are you interested? <span class="choice" id="accept">Accept</span></p>
-      <p>Not interested? <span class="choice" id="decline" onclick="hideGetNotifiedContainer();">Decline</span></p>
-    </span>
-    <span id="number-input">
-      <p class="fade-in" id="prompt-user">
-        Please provide your country code and mobile number (for example +233 *** *** **)
+  <div class="fade-background" id="fade-background"></div>
+    <!-- To have interested users add their WhatsApp contact to my broadcast list -->
+    <div class="get-notified-container fade-in" id="get-notified-container">
+      <span id="cancel-btn" onclick="hideGetNotifiedContainer();">&times;</span>
+      <p id="notice">
+        Provide your WhatsApp contact <em>with your country code</em> to be
+        added to the WhatsApp broadcast list where you'll get notified about
+        different live learning sessions that you can participate in, free of
+        charge?
       </p>
-      <input type="tel" name="whatsapp-no" id="whatsapp-no" placeholder="Your country code and WhatsApp contact" />
-      <button type="submit" id="whatsapp-submit-btn">Submit</button>
-    </span>
-  </div>
+      <span id="user-choice">
+        <p>Are you interested? <span class="choice" id="accept">Accept</span></p>
+        <p>Not interested? <span class="choice" id="decline" onclick="hideGetNotifiedContainer();">Decline</span></p>
+      </span>
+      <span id="number-input">
+        <p class="fade-in" id="prompt-user">
+          Please provide your country code and mobile number (for example +233 *** *** **)
+        </p>
+        <input type="tel" name="whatsapp-no" id="whatsapp-no" placeholder="Your WhatsApp number" />
+        <button type="submit" id="whatsapp-submit-btn">Submit</button>
+      </span>
+    </div>
 
   <!-- Notifications to be displayed to stop the user from resending a processing request -->
   <div class="notifications heartbeat">
