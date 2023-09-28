@@ -21,6 +21,6 @@ The backend work is hosted the GitHub repository, [learnWithMe-backend](https://
 ## Usage
 All you need to do is to visit the website and fill the form, and you'll get a feedback, if your application is accepted and if your email is correct and working. The admin paniel actually has more functionalities, actually, but it's not for the public 😊
 
-**Website:** learnwithtopman.vercel.app
+**Website:** [learnwithtopman.vercel.app](https://learnwithtopman.vercel.app)
 
 ##### Author: [Topman Paul-Dike](https://github.com/tpauldike)
