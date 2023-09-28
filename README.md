@@ -1,4 +1,4 @@
-# LearnWithMe
+# learnWithMe
 ## About
 **LearnWithMe** is a web app that started as a form designed to have the users subscribe for classes on `HTML & CSS`, `JavaScript`, `React`, `C`, `Python`, `NodeJs` and more...
 
