@@ -15,10 +15,6 @@ const displayComingSoon = () => {
   comingSoon.style.display = 'none';
 };
 
-const subscribeBtnResponse = () => {
-  alert('You subcribe by filling and submitting the subscription form');
-};
-
 document.getElementById('course').addEventListener('input', () => {
   document.getElementById('course').value === 'others' ? document.getElementById('specify-course').style.display = 'flex' : document.getElementById('specify-course').style.display = 'none';
 });

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./styles/form.css" />
   <link rel="stylesheet" href="./styles/get-notified.css" />
   <link rel="stylesheet" href="./styles/animations.css" />
-  <link rel="stylesheet" href="./styles/notifications.css" />
+  <link rel="stylesheet" href="./styles/coming-soon.css" />
 </head>
 <header>
   <div class="header-content">
@@ -23,14 +23,13 @@
     <nav>
       <p id="about" onclick="displayComingSoon();">About</p>
       <p id="contact_topman" onclick="displayComingSoon();">Contact Topman</p>
-      <p id="subscribe" onclick="subscribeBtnResponse();">Subscribe</p>
+      <p id="subscribe">Subscribe</p>
       <button type="button" id="menu-toggle" onclick="toggleMenu();">&#9776;</button>
       <ul class="menu swing-in-top-fwd" id="menu">
         <li onclick="keepBackgroundFaded(); displayComingSoon();">About</li>
         <li onclick="keepBackgroundFaded(); displayComingSoon();">Contact Topman</li>
-        <li onclick="subscribeBtnResponse();">Subscribe</li>
-        <button type="button" id="get-notified-btn_mobile" onclick="displayGetNotifiedContainer();">Get
-          Notified</button>
+        <li id="subscribe-on-mobile">Subscribe</li>
+        <button type="button" id="get-notified-btn_mobile" onclick="displayGetNotifiedContainer();">Get Notified</button>
       </ul>
       <button type="button" id="get-notified-btn" onclick="displayGetNotifiedContainer();">Get Notified</button>
     </nav>
@@ -155,17 +154,11 @@
       </span>
     </div>
 
-  <!-- Notifications to be displayed to stop the user from resending a processing request -->
-  <div class="notifications heartbeat">
-    <p id="request-processing"><em>Request processing...</em></p>
-    <p id="please-wait"><em>Please wait...</em></p>
-    <p id="successful"><em>Subscription successful!</em></p>
-    <p id="error"><em></em></p>
-  </div>
   <div class="footer">&copy Portfolio Project by Topman Paul-Dike</div>
 
 
   <script type="text/javascript" src="scripts/form.js"></script>
+  <script type="text/javascript" src="scripts/notifications.js"></script>
   <script type="text/javascript" src="scripts/get-notified.js"></script>
 </body>
 
