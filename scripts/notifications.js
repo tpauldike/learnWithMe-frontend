@@ -16,10 +16,12 @@ const webPush = (htmlElement, event, { title, body, icon = "/images/logo.jpeg", 
             })
             .catch(error => {
                 console.error(error);
-            }); 
+            });
     });
 };
 
 webPush(document.getElementById('subscribe'), 'click', { title: 'Subscribe here', body: 'Please fill and submit the Subscription Form, to subscribe' });
-webPush(document.getElementById('subscribe-on-mobile'), 'click', { title: 'Subscribe here', body: 'Please fill and submit the Subscription Form, to subscribe' });
 
+document.getElementById('subscribe-on-mobile').addEventListener('click', () => {
+    alert('Please fill and submit the Subscription Form, to subscribe');
+});
